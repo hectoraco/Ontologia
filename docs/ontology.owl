@@ -1,0 +1,880 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/flightsatisfactionsurvey#"
+     xml:base="http://www.semanticweb.org/flightsatisfactionsurvey"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:flightsatisfactionsurvey="http://www.semanticweb.org/flightsatisfactionsurvey#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey">
+        <rdfs:comment>Ontology about the passengers flight satisfaction.</rdfs:comment>
+        <rdfs:label>Flight Satisfaction Survey Ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#belongs -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#belongs">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Passenger"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Country"/>
+        <rdfs:comment>Indicates the country of every passenger</rdfs:comment>
+        <rdfs:label>belongs</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#chooseSeat -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#chooseSeat">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Passenger"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#SeatType"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#chooseSeat"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#SeatType"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment>Represents the seat class choosen by every passenger</rdfs:comment>
+        <rdfs:label>choose Seat</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#does -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#does">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Airline"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Flight"/>
+        <rdfs:comment>Represents the flight asociated to the airline</rdfs:comment>
+        <rdfs:label>does</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#hasAircraft -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#hasAircraft">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Flight"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Aircraft"/>
+        <rdfs:comment>Represents wich aircraft model operates every flight</rdfs:comment>
+        <rdfs:label>has Aircraft</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#hasOverallRating -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#hasOverallRating">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Flight"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#OverallRating"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#hasPassengerRating -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#hasPassengerRating">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Flight"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#PassengerRating"/>
+        <rdfs:comment>Represents the rating of every flight</rdfs:comment>
+        <rdfs:label>has Passenger Rating</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#hasPerception -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#hasPerception">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Passenger"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Perception"/>
+        <rdfs:comment>Represents the passenger main perception about the flight</rdfs:comment>
+        <rdfs:label>has Perception</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#hasPurpose -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#hasPurpose">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Passenger"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#TripPurpose"/>
+        <rdfs:comment>Represents the trip purpose of every passenger</rdfs:comment>
+        <rdfs:label>has Purpose</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#takesFlights -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#takesFlights">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Passenger"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Flight"/>
+        <rdfs:comment>Represents that every passenger takes a flight number</rdfs:comment>
+        <rdfs:label>takes Flight</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#transports -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#transports">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Aircraft"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Passenger"/>
+        <rdfs:comment>Represents that every aircraft transports passengers</rdfs:comment>
+        <rdfs:label>transports</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#hasBoardingRating -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#hasBoardingRating">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Flight"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>Indicates the rating about the boarding process in every flight, from 1 to 10.</rdfs:comment>
+        <rdfs:label>has Boarding Rating</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#hasCode -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#hasCode">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Flight"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Indicates the name or code of every flight</rdfs:comment>
+        <rdfs:label>has Code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#hasDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#hasDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Published"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>Indicates the date when the rating has been published</rdfs:comment>
+        <rdfs:label>has Date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#hasOverallRating -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#hasOverallRating">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#hasStaffRating -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#hasStaffRating">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Flight"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>Indicates the rating about the cabin staff in every flight, from 1 to 10.</rdfs:comment>
+        <rdfs:label>has Staff Rating</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#Aircraft -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#Aircraft">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Flight"/>
+        <rdfs:comment>Represents the diferent aircraft brands and models.</rdfs:comment>
+        <rdfs:label>Aircraft</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#Airline -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#Airline">
+        <rdfs:comment>Represents the diferent airline companies.</rdfs:comment>
+        <rdfs:label>Airline</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#Average -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#Average">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Perception"/>
+        <rdfs:comment>Indicates a general average perception of the flight.</rdfs:comment>
+        <rdfs:label>Average</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#BoardingProcess -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#BoardingProcess">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#hasBoardingRating"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#PassengerRating"/>
+        <rdfs:comment>Indicates the rating for the boarding process.</rdfs:comment>
+        <rdfs:label>Boarding Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#CabinStaff -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#CabinStaff">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#hasBoardingRating"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#PassengerRating"/>
+        <rdfs:comment>Indicates the rating for the cabin staff.</rdfs:comment>
+        <rdfs:label>Cabin Staff</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#Country -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#Country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Passenger"/>
+        <rdfs:comment>Indicates the country of every passenger</rdfs:comment>
+        <rdfs:label>Country</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#Date -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#Date">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Flight"/>
+        <rdfs:comment>Indicates the flight date.</rdfs:comment>
+        <rdfs:label>Flight Date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#Destination -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#Destination">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Flight"/>
+        <rdfs:comment>Indicates the destination of the flight.</rdfs:comment>
+        <rdfs:label>Destination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#Flight -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#Flight">
+        <rdfs:comment>Represents the main information about every passenger.</rdfs:comment>
+        <rdfs:label>Flight Information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#Food -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#Food">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#PassengerRating"/>
+        <rdfs:comment>Indicates the rating for the inflight food and drinks</rdfs:comment>
+        <rdfs:label>Food</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#Good -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#Good">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Perception"/>
+        <rdfs:comment>Indicates a general good perception of the flight.</rdfs:comment>
+        <rdfs:label>Good</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#InflightEntertainment -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#InflightEntertainment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#PassengerRating"/>
+        <rdfs:comment>Indicates the rating for the inflight entertainment.</rdfs:comment>
+        <rdfs:label>Inflight Entertainment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#Origin -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#Origin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Flight"/>
+        <rdfs:comment>Indicates the origin of the flight.</rdfs:comment>
+        <rdfs:label>Origin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#OverallRating -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#OverallRating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#PassengerRating"/>
+        <rdfs:comment>Indicates the overall rating for every flight.</rdfs:comment>
+        <rdfs:label>Overall Rating</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#Passenger -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#Passenger">
+        <rdfs:comment>Represents the main information about every passenger.</rdfs:comment>
+        <rdfs:label>Passenger Information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#PassengerRating -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#PassengerRating">
+        <rdfs:comment>Represents the main valuable aspects of every flight</rdfs:comment>
+        <rdfs:label>Passenger Rating</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#Perception -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#Perception">
+        <rdfs:comment>Represents the passengers general perception about every flight.</rdfs:comment>
+        <rdfs:label>Passenger Perception</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#Poor -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#Poor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Perception"/>
+        <rdfs:comment>Indicates a general  poor perception of the flight.</rdfs:comment>
+        <rdfs:label>Poor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#Published -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#Published">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#PassengerRating"/>
+        <rdfs:comment>Indicates the published date of the survey.</rdfs:comment>
+        <rdfs:label>Date Published</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#Punctuality -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#Punctuality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#PassengerRating"/>
+        <rdfs:comment>Indicates the rating related with the punctuality of every flight.</rdfs:comment>
+        <rdfs:label>Punctuality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#SeatComfort -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#SeatComfort">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#PassengerRating"/>
+        <rdfs:comment>Indicates the rating of the seat comfort.</rdfs:comment>
+        <rdfs:label>Seat Comfort</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#SeatType -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#SeatType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Passenger"/>
+        <rdfs:comment>Indicates the type of the seat choosen by every passenger</rdfs:comment>
+        <rdfs:label>Seat Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#TripPurpose -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#TripPurpose">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Passenger"/>
+        <rdfs:comment>Indicates the purpose of every passenger trip</rdfs:comment>
+        <rdfs:label>Trip Purpose</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#VeryGood -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#VeryGood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Perception"/>
+        <rdfs:comment>Indicates a general very good perception of the flight.</rdfs:comment>
+        <rdfs:label>Very Good</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#VeryPoor -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#VeryPoor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Perception"/>
+        <rdfs:comment>Indicates a general very poor perception of the flight.</rdfs:comment>
+        <rdfs:label>Very Poor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#airbus340 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#airbus340">
+        <rdf:type rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Aircraft"/>
+        <transports rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#laura"/>
+        <rdfs:comment>aircraft model</rdfs:comment>
+        <rdfs:label>airbus340</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#bad -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#bad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#PassengerRating"/>
+        <rdfs:comment>Passenger rating instance</rdfs:comment>
+        <rdfs:label>bad</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#boeing747 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#boeing747">
+        <rdf:type rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Aircraft"/>
+        <transports rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#christopher"/>
+        <rdfs:comment>aircraft model</rdfs:comment>
+        <rdfs:label>boeing747</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#business -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#business">
+        <rdf:type rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#TripPurpose"/>
+        <rdfs:comment>Trip purpose instance</rdfs:comment>
+        <rdfs:label>business</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#businessClass -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#businessClass">
+        <rdf:type rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#SeatType"/>
+        <rdfs:comment>Seat type instance</rdfs:comment>
+        <rdfs:label>business Class</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#christopher -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#christopher">
+        <rdf:type rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Passenger"/>
+        <belongs rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#germany"/>
+        <chooseSeat rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#businessClass"/>
+        <hasPurpose rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#business"/>
+        <takesFlights rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#flight1"/>
+        <rdfs:comment>Passenger instance</rdfs:comment>
+        <rdfs:label>christopher</rdfs:label>
+        <rdfs:sameAs>http://dbpedia.org/resource/christopher</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#economyClass -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#economyClass">
+        <rdf:type rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#SeatType"/>
+        <rdfs:comment>Seat type instance</rdfs:comment>
+        <rdfs:label>economy Class</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#excellent -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#excellent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#PassengerRating"/>
+        <rdfs:comment>Passenger rating instance</rdfs:comment>
+        <rdfs:label>excellent</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#firstClass -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#firstClass">
+        <rdf:type rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#SeatType"/>
+        <rdfs:comment>Seat type instance</rdfs:comment>
+        <rdfs:label>first Class</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#flight1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#flight1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Flight"/>
+        <hasAircraft rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#boeing747"/>
+        <hasPassengerRating rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#excellent"/>
+        <hasCode>q2525</hasCode>
+        <hasOverallRating rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</hasOverallRating>
+        <rdfs:comment>Flight instance</rdfs:comment>
+        <rdfs:label>flight1</rdfs:label>
+        <rdfs:sameAs>http://dbpedia.org/resource/flight1</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#flight2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#flight2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Flight"/>
+        <hasAircraft rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#airbus340"/>
+        <hasPassengerRating rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#bad"/>
+        <hasCode>r0384</hasCode>
+        <rdfs:comment>Flight instance</rdfs:comment>
+        <rdfs:label>flight2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#france -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#france">
+        <rdf:type rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Country"/>
+        <rdfs:comment>Country instance</rdfs:comment>
+        <rdfs:label>france</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#germany -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#germany">
+        <rdf:type rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Country"/>
+        <rdfs:comment>Country instance</rdfs:comment>
+        <rdfs:label>germany</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#laura -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#laura">
+        <rdf:type rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Passenger"/>
+        <belongs rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#france"/>
+        <chooseSeat rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#economyClass"/>
+        <hasPurpose rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#leisure"/>
+        <takesFlights rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#flight2"/>
+        <rdfs:comment>Passenger instance</rdfs:comment>
+        <rdfs:label>laura</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#leisure -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#leisure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#TripPurpose"/>
+        <rdfs:comment>Trip purpose instance</rdfs:comment>
+        <rdfs:label>leisure</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#normal -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#normal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#PassengerRating"/>
+        <rdfs:comment>Passenger rating instance</rdfs:comment>
+        <rdfs:label>normal</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#other -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#other">
+        <rdf:type rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#TripPurpose"/>
+        <rdfs:comment>Trip purpose instance</rdfs:comment>
+        <rdfs:label>other</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#qatarAirways -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#qatarAirways">
+        <rdf:type rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Airline"/>
+        <does rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#flight1"/>
+        <hasAircraft rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#boeing747"/>
+        <rdfs:comment>Airline instance</rdfs:comment>
+        <rdfs:label>qatar Airways</rdfs:label>
+        <rdfs:sameAs>http://dbpedia.org/resource/qatarAirways</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#robert -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#robert">
+        <belongs rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#france"/>
+        <chooseSeat rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#economyClass"/>
+        <hasPurpose rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#leisure"/>
+        <takesFlights rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#flight2"/>
+        <rdfs:comment>Passenger instance</rdfs:comment>
+        <rdfs:label>robert</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/flightsatisfactionsurvey#ryanair -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#ryanair">
+        <rdf:type rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#Airline"/>
+        <does rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#flight2"/>
+        <hasAircraft rdf:resource="http://www.semanticweb.org/flightsatisfactionsurvey#airbus340"/>
+        <rdfs:comment>Airline instance</rdfs:comment>
+        <rdfs:label>ryanair</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#hasOverallRating">
+        <rdfs:comment>Represents the passenger overall rating of the flight, from 1 to 10.</rdfs:comment>
+        <rdfs:label>has Overall Rating</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#BoardingProcess"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#Food"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#InflightEntertainment"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#OverallRating"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#Published"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#Punctuality"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/flightsatisfactionsurvey#SeatComfort"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

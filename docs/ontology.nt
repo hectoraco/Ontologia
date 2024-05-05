@@ -1,0 +1,540 @@
+<http://www.semanticweb.org/flightsatisfactionsurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/flightsatisfactionsurvey> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology about the passengers flight satisfaction." .
+<http://www.semanticweb.org/flightsatisfactionsurvey> <http://www.w3.org/2000/01/rdf-schema#label> "Flight Satisfaction Survey Ontology" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#belongs
+<http://www.semanticweb.org/flightsatisfactionsurvey#belongs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#belongs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#belongs> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/flightsatisfactionsurvey#Passenger> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#belongs> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/flightsatisfactionsurvey#Country> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#belongs> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the country of every passenger" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#belongs> <http://www.w3.org/2000/01/rdf-schema#label> "belongs" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#chooseSeat
+<http://www.semanticweb.org/flightsatisfactionsurvey#chooseSeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#chooseSeat> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/flightsatisfactionsurvey#Passenger> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#chooseSeat> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/flightsatisfactionsurvey#SeatType> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#chooseSeat> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/flightsatisfactionsurvey#SeatType> .
+_:genid1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/flightsatisfactionsurvey#chooseSeat> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#chooseSeat> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the seat class choosen by every passenger" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#chooseSeat> <http://www.w3.org/2000/01/rdf-schema#label> "choose Seat" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#does
+<http://www.semanticweb.org/flightsatisfactionsurvey#does> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#does> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#does> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/flightsatisfactionsurvey#Airline> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#does> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/flightsatisfactionsurvey#Flight> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#does> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the flight asociated to the airline" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#does> <http://www.w3.org/2000/01/rdf-schema#label> "does" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#hasAircraft
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasAircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasAircraft> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/flightsatisfactionsurvey#Flight> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasAircraft> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/flightsatisfactionsurvey#Aircraft> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasAircraft> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents wich aircraft model operates every flight" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasAircraft> <http://www.w3.org/2000/01/rdf-schema#label> "has Aircraft" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#hasOverallRating
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasOverallRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasOverallRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasOverallRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/flightsatisfactionsurvey#Flight> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasOverallRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/flightsatisfactionsurvey#OverallRating> .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#hasPassengerRating
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasPassengerRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasPassengerRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/flightsatisfactionsurvey#Flight> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasPassengerRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/flightsatisfactionsurvey#PassengerRating> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasPassengerRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the rating of every flight" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasPassengerRating> <http://www.w3.org/2000/01/rdf-schema#label> "has Passenger Rating" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#hasPerception
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasPerception> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasPerception> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/flightsatisfactionsurvey#Passenger> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasPerception> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/flightsatisfactionsurvey#Perception> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasPerception> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the passenger main perception about the flight" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasPerception> <http://www.w3.org/2000/01/rdf-schema#label> "has Perception" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#hasPurpose
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasPurpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasPurpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasPurpose> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/flightsatisfactionsurvey#Passenger> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasPurpose> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/flightsatisfactionsurvey#TripPurpose> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasPurpose> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the trip purpose of every passenger" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasPurpose> <http://www.w3.org/2000/01/rdf-schema#label> "has Purpose" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#takesFlights
+<http://www.semanticweb.org/flightsatisfactionsurvey#takesFlights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#takesFlights> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/flightsatisfactionsurvey#Passenger> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#takesFlights> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/flightsatisfactionsurvey#Flight> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#takesFlights> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents that every passenger takes a flight number" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#takesFlights> <http://www.w3.org/2000/01/rdf-schema#label> "takes Flight" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#transports
+<http://www.semanticweb.org/flightsatisfactionsurvey#transports> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#transports> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/flightsatisfactionsurvey#Aircraft> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#transports> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/flightsatisfactionsurvey#Passenger> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#transports> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents that every aircraft transports passengers" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#transports> <http://www.w3.org/2000/01/rdf-schema#label> "transports" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#hasBoardingRating
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasBoardingRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasBoardingRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/flightsatisfactionsurvey#Flight> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasBoardingRating> <http://www.w3.org/2000/01/rdf-schema#range> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid4 .
+_:genid4 <http://www.w3.org/2001/XMLSchema#maxInclusive> "10"^^<http://www.w3.org/2001/XMLSchema#int> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid6 .
+_:genid6 <http://www.w3.org/2001/XMLSchema#minInclusive> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#int> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasBoardingRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the rating about the boarding process in every flight, from 1 to 10." .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasBoardingRating> <http://www.w3.org/2000/01/rdf-schema#label> "has Boarding Rating" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#hasCode
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/flightsatisfactionsurvey#Flight> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the name or code of every flight" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasCode> <http://www.w3.org/2000/01/rdf-schema#label> "has Code" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#hasDate
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/flightsatisfactionsurvey#Published> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the date when the rating has been published" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasDate> <http://www.w3.org/2000/01/rdf-schema#label> "has Date" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#hasOverallRating
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasOverallRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasOverallRating> <http://www.w3.org/2000/01/rdf-schema#range> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid9 .
+_:genid9 <http://www.w3.org/2001/XMLSchema#maxInclusive> "10"^^<http://www.w3.org/2001/XMLSchema#int> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
+_:genid11 <http://www.w3.org/2001/XMLSchema#minInclusive> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#int> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#hasStaffRating
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasStaffRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasStaffRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/flightsatisfactionsurvey#Flight> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasStaffRating> <http://www.w3.org/2000/01/rdf-schema#range> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid14 .
+_:genid14 <http://www.w3.org/2001/XMLSchema#maxInclusive> "10"^^<http://www.w3.org/2001/XMLSchema#int> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid16 .
+_:genid16 <http://www.w3.org/2001/XMLSchema#minInclusive> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#int> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasStaffRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the rating about the cabin staff in every flight, from 1 to 10." .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasStaffRating> <http://www.w3.org/2000/01/rdf-schema#label> "has Staff Rating" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#Aircraft
+<http://www.semanticweb.org/flightsatisfactionsurvey#Aircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Aircraft> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/flightsatisfactionsurvey#Flight> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Aircraft> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the diferent aircraft brands and models." .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Aircraft> <http://www.w3.org/2000/01/rdf-schema#label> "Aircraft" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#Airline
+<http://www.semanticweb.org/flightsatisfactionsurvey#Airline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Airline> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the diferent airline companies." .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Airline> <http://www.w3.org/2000/01/rdf-schema#label> "Airline" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#Average
+<http://www.semanticweb.org/flightsatisfactionsurvey#Average> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Average> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/flightsatisfactionsurvey#Perception> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Average> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a general average perception of the flight." .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Average> <http://www.w3.org/2000/01/rdf-schema#label> "Average" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#BoardingProcess
+<http://www.semanticweb.org/flightsatisfactionsurvey#BoardingProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#BoardingProcess> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#int> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/flightsatisfactionsurvey#hasBoardingRating> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#BoardingProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/flightsatisfactionsurvey#PassengerRating> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#BoardingProcess> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the rating for the boarding process." .
+<http://www.semanticweb.org/flightsatisfactionsurvey#BoardingProcess> <http://www.w3.org/2000/01/rdf-schema#label> "Boarding Process" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#CabinStaff
+<http://www.semanticweb.org/flightsatisfactionsurvey#CabinStaff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#CabinStaff> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid18 .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#int> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/flightsatisfactionsurvey#hasBoardingRating> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#CabinStaff> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/flightsatisfactionsurvey#PassengerRating> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#CabinStaff> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the rating for the cabin staff." .
+<http://www.semanticweb.org/flightsatisfactionsurvey#CabinStaff> <http://www.w3.org/2000/01/rdf-schema#label> "Cabin Staff" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#Country
+<http://www.semanticweb.org/flightsatisfactionsurvey#Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Country> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/flightsatisfactionsurvey#Passenger> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Country> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the country of every passenger" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#Date
+<http://www.semanticweb.org/flightsatisfactionsurvey#Date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Date> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/flightsatisfactionsurvey#Flight> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Date> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the flight date." .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Date> <http://www.w3.org/2000/01/rdf-schema#label> "Flight Date" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#Destination
+<http://www.semanticweb.org/flightsatisfactionsurvey#Destination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Destination> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/flightsatisfactionsurvey#Flight> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Destination> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the destination of the flight." .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Destination> <http://www.w3.org/2000/01/rdf-schema#label> "Destination" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#Flight
+<http://www.semanticweb.org/flightsatisfactionsurvey#Flight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Flight> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the main information about every passenger." .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Flight> <http://www.w3.org/2000/01/rdf-schema#label> "Flight Information" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#Food
+<http://www.semanticweb.org/flightsatisfactionsurvey#Food> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Food> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/flightsatisfactionsurvey#PassengerRating> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Food> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the rating for the inflight food and drinks" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Food> <http://www.w3.org/2000/01/rdf-schema#label> "Food" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#Good
+<http://www.semanticweb.org/flightsatisfactionsurvey#Good> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Good> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/flightsatisfactionsurvey#Perception> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Good> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a general good perception of the flight." .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Good> <http://www.w3.org/2000/01/rdf-schema#label> "Good" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#InflightEntertainment
+<http://www.semanticweb.org/flightsatisfactionsurvey#InflightEntertainment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#InflightEntertainment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/flightsatisfactionsurvey#PassengerRating> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#InflightEntertainment> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the rating for the inflight entertainment." .
+<http://www.semanticweb.org/flightsatisfactionsurvey#InflightEntertainment> <http://www.w3.org/2000/01/rdf-schema#label> "Inflight Entertainment" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#Origin
+<http://www.semanticweb.org/flightsatisfactionsurvey#Origin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Origin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/flightsatisfactionsurvey#Flight> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Origin> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the origin of the flight." .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Origin> <http://www.w3.org/2000/01/rdf-schema#label> "Origin" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#OverallRating
+<http://www.semanticweb.org/flightsatisfactionsurvey#OverallRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#OverallRating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/flightsatisfactionsurvey#PassengerRating> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#OverallRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the overall rating for every flight." .
+<http://www.semanticweb.org/flightsatisfactionsurvey#OverallRating> <http://www.w3.org/2000/01/rdf-schema#label> "Overall Rating" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#Passenger
+<http://www.semanticweb.org/flightsatisfactionsurvey#Passenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Passenger> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the main information about every passenger." .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Passenger> <http://www.w3.org/2000/01/rdf-schema#label> "Passenger Information" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#PassengerRating
+<http://www.semanticweb.org/flightsatisfactionsurvey#PassengerRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#PassengerRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the main valuable aspects of every flight" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#PassengerRating> <http://www.w3.org/2000/01/rdf-schema#label> "Passenger Rating" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#Perception
+<http://www.semanticweb.org/flightsatisfactionsurvey#Perception> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Perception> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the passengers general perception about every flight." .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Perception> <http://www.w3.org/2000/01/rdf-schema#label> "Passenger Perception" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#Poor
+<http://www.semanticweb.org/flightsatisfactionsurvey#Poor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Poor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/flightsatisfactionsurvey#Perception> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Poor> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a general  poor perception of the flight." .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Poor> <http://www.w3.org/2000/01/rdf-schema#label> "Poor" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#Published
+<http://www.semanticweb.org/flightsatisfactionsurvey#Published> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Published> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/flightsatisfactionsurvey#PassengerRating> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Published> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the published date of the survey." .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Published> <http://www.w3.org/2000/01/rdf-schema#label> "Date Published" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#Punctuality
+<http://www.semanticweb.org/flightsatisfactionsurvey#Punctuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Punctuality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/flightsatisfactionsurvey#PassengerRating> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Punctuality> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the rating related with the punctuality of every flight." .
+<http://www.semanticweb.org/flightsatisfactionsurvey#Punctuality> <http://www.w3.org/2000/01/rdf-schema#label> "Punctuality" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#SeatComfort
+<http://www.semanticweb.org/flightsatisfactionsurvey#SeatComfort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#SeatComfort> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/flightsatisfactionsurvey#PassengerRating> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#SeatComfort> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the rating of the seat comfort." .
+<http://www.semanticweb.org/flightsatisfactionsurvey#SeatComfort> <http://www.w3.org/2000/01/rdf-schema#label> "Seat Comfort" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#SeatType
+<http://www.semanticweb.org/flightsatisfactionsurvey#SeatType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#SeatType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/flightsatisfactionsurvey#Passenger> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#SeatType> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the type of the seat choosen by every passenger" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#SeatType> <http://www.w3.org/2000/01/rdf-schema#label> "Seat Type" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#TripPurpose
+<http://www.semanticweb.org/flightsatisfactionsurvey#TripPurpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#TripPurpose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/flightsatisfactionsurvey#Passenger> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#TripPurpose> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the purpose of every passenger trip" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#TripPurpose> <http://www.w3.org/2000/01/rdf-schema#label> "Trip Purpose" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#VeryGood
+<http://www.semanticweb.org/flightsatisfactionsurvey#VeryGood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#VeryGood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/flightsatisfactionsurvey#Perception> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#VeryGood> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a general very good perception of the flight." .
+<http://www.semanticweb.org/flightsatisfactionsurvey#VeryGood> <http://www.w3.org/2000/01/rdf-schema#label> "Very Good" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#VeryPoor
+<http://www.semanticweb.org/flightsatisfactionsurvey#VeryPoor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#VeryPoor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/flightsatisfactionsurvey#Perception> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#VeryPoor> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a general very poor perception of the flight." .
+<http://www.semanticweb.org/flightsatisfactionsurvey#VeryPoor> <http://www.w3.org/2000/01/rdf-schema#label> "Very Poor" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#airbus340
+<http://www.semanticweb.org/flightsatisfactionsurvey#airbus340> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#airbus340> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/flightsatisfactionsurvey#Aircraft> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#airbus340> <http://www.semanticweb.org/flightsatisfactionsurvey#transports> <http://www.semanticweb.org/flightsatisfactionsurvey#laura> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#airbus340> <http://www.w3.org/2000/01/rdf-schema#comment> "aircraft model" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#airbus340> <http://www.w3.org/2000/01/rdf-schema#label> "airbus340" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#bad
+<http://www.semanticweb.org/flightsatisfactionsurvey#bad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#bad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/flightsatisfactionsurvey#PassengerRating> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#bad> <http://www.w3.org/2000/01/rdf-schema#comment> "Passenger rating instance" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#bad> <http://www.w3.org/2000/01/rdf-schema#label> "bad" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#boeing747
+<http://www.semanticweb.org/flightsatisfactionsurvey#boeing747> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#boeing747> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/flightsatisfactionsurvey#Aircraft> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#boeing747> <http://www.semanticweb.org/flightsatisfactionsurvey#transports> <http://www.semanticweb.org/flightsatisfactionsurvey#christopher> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#boeing747> <http://www.w3.org/2000/01/rdf-schema#comment> "aircraft model" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#boeing747> <http://www.w3.org/2000/01/rdf-schema#label> "boeing747" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#business
+<http://www.semanticweb.org/flightsatisfactionsurvey#business> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#business> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/flightsatisfactionsurvey#TripPurpose> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#business> <http://www.w3.org/2000/01/rdf-schema#comment> "Trip purpose instance" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#business> <http://www.w3.org/2000/01/rdf-schema#label> "business" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#businessClass
+<http://www.semanticweb.org/flightsatisfactionsurvey#businessClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#businessClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/flightsatisfactionsurvey#SeatType> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#businessClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Seat type instance" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#businessClass> <http://www.w3.org/2000/01/rdf-schema#label> "business Class" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#christopher
+<http://www.semanticweb.org/flightsatisfactionsurvey#christopher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#christopher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/flightsatisfactionsurvey#Passenger> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#christopher> <http://www.semanticweb.org/flightsatisfactionsurvey#belongs> <http://www.semanticweb.org/flightsatisfactionsurvey#germany> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#christopher> <http://www.semanticweb.org/flightsatisfactionsurvey#chooseSeat> <http://www.semanticweb.org/flightsatisfactionsurvey#businessClass> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#christopher> <http://www.semanticweb.org/flightsatisfactionsurvey#hasPurpose> <http://www.semanticweb.org/flightsatisfactionsurvey#business> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#christopher> <http://www.semanticweb.org/flightsatisfactionsurvey#takesFlights> <http://www.semanticweb.org/flightsatisfactionsurvey#flight1> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#christopher> <http://www.w3.org/2000/01/rdf-schema#comment> "Passenger instance" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#christopher> <http://www.w3.org/2000/01/rdf-schema#label> "christopher" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#christopher> <http://www.w3.org/2000/01/rdf-schema#sameAs> "http://dbpedia.org/resource/christopher" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#economyClass
+<http://www.semanticweb.org/flightsatisfactionsurvey#economyClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#economyClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/flightsatisfactionsurvey#SeatType> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#economyClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Seat type instance" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#economyClass> <http://www.w3.org/2000/01/rdf-schema#label> "economy Class" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#excellent
+<http://www.semanticweb.org/flightsatisfactionsurvey#excellent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#excellent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/flightsatisfactionsurvey#PassengerRating> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#excellent> <http://www.w3.org/2000/01/rdf-schema#comment> "Passenger rating instance" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#excellent> <http://www.w3.org/2000/01/rdf-schema#label> "excellent" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#firstClass
+<http://www.semanticweb.org/flightsatisfactionsurvey#firstClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#firstClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/flightsatisfactionsurvey#SeatType> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#firstClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Seat type instance" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#firstClass> <http://www.w3.org/2000/01/rdf-schema#label> "first Class" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#flight1
+<http://www.semanticweb.org/flightsatisfactionsurvey#flight1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#flight1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/flightsatisfactionsurvey#Flight> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#flight1> <http://www.semanticweb.org/flightsatisfactionsurvey#hasAircraft> <http://www.semanticweb.org/flightsatisfactionsurvey#boeing747> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#flight1> <http://www.semanticweb.org/flightsatisfactionsurvey#hasPassengerRating> <http://www.semanticweb.org/flightsatisfactionsurvey#excellent> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#flight1> <http://www.semanticweb.org/flightsatisfactionsurvey#hasCode> "q2525" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#flight1> <http://www.semanticweb.org/flightsatisfactionsurvey#hasOverallRating> "8"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#flight1> <http://www.w3.org/2000/01/rdf-schema#comment> "Flight instance" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#flight1> <http://www.w3.org/2000/01/rdf-schema#label> "flight1" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#flight1> <http://www.w3.org/2000/01/rdf-schema#sameAs> "http://dbpedia.org/resource/flight1" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#flight2
+<http://www.semanticweb.org/flightsatisfactionsurvey#flight2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#flight2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/flightsatisfactionsurvey#Flight> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#flight2> <http://www.semanticweb.org/flightsatisfactionsurvey#hasAircraft> <http://www.semanticweb.org/flightsatisfactionsurvey#airbus340> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#flight2> <http://www.semanticweb.org/flightsatisfactionsurvey#hasPassengerRating> <http://www.semanticweb.org/flightsatisfactionsurvey#bad> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#flight2> <http://www.semanticweb.org/flightsatisfactionsurvey#hasCode> "r0384" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#flight2> <http://www.w3.org/2000/01/rdf-schema#comment> "Flight instance" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#flight2> <http://www.w3.org/2000/01/rdf-schema#label> "flight2" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#france
+<http://www.semanticweb.org/flightsatisfactionsurvey#france> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#france> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/flightsatisfactionsurvey#Country> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#france> <http://www.w3.org/2000/01/rdf-schema#comment> "Country instance" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#france> <http://www.w3.org/2000/01/rdf-schema#label> "france" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#germany
+<http://www.semanticweb.org/flightsatisfactionsurvey#germany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#germany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/flightsatisfactionsurvey#Country> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#germany> <http://www.w3.org/2000/01/rdf-schema#comment> "Country instance" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#germany> <http://www.w3.org/2000/01/rdf-schema#label> "germany" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#laura
+<http://www.semanticweb.org/flightsatisfactionsurvey#laura> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#laura> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/flightsatisfactionsurvey#Passenger> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#laura> <http://www.semanticweb.org/flightsatisfactionsurvey#belongs> <http://www.semanticweb.org/flightsatisfactionsurvey#france> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#laura> <http://www.semanticweb.org/flightsatisfactionsurvey#chooseSeat> <http://www.semanticweb.org/flightsatisfactionsurvey#economyClass> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#laura> <http://www.semanticweb.org/flightsatisfactionsurvey#hasPurpose> <http://www.semanticweb.org/flightsatisfactionsurvey#leisure> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#laura> <http://www.semanticweb.org/flightsatisfactionsurvey#takesFlights> <http://www.semanticweb.org/flightsatisfactionsurvey#flight2> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#laura> <http://www.w3.org/2000/01/rdf-schema#comment> "Passenger instance" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#laura> <http://www.w3.org/2000/01/rdf-schema#label> "laura" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#leisure
+<http://www.semanticweb.org/flightsatisfactionsurvey#leisure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#leisure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/flightsatisfactionsurvey#TripPurpose> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#leisure> <http://www.w3.org/2000/01/rdf-schema#comment> "Trip purpose instance" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#leisure> <http://www.w3.org/2000/01/rdf-schema#label> "leisure" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#normal
+<http://www.semanticweb.org/flightsatisfactionsurvey#normal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#normal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/flightsatisfactionsurvey#PassengerRating> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#normal> <http://www.w3.org/2000/01/rdf-schema#comment> "Passenger rating instance" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#normal> <http://www.w3.org/2000/01/rdf-schema#label> "normal" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#other
+<http://www.semanticweb.org/flightsatisfactionsurvey#other> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#other> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/flightsatisfactionsurvey#TripPurpose> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#other> <http://www.w3.org/2000/01/rdf-schema#comment> "Trip purpose instance" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#other> <http://www.w3.org/2000/01/rdf-schema#label> "other" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#qatarAirways
+<http://www.semanticweb.org/flightsatisfactionsurvey#qatarAirways> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#qatarAirways> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/flightsatisfactionsurvey#Airline> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#qatarAirways> <http://www.semanticweb.org/flightsatisfactionsurvey#does> <http://www.semanticweb.org/flightsatisfactionsurvey#flight1> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#qatarAirways> <http://www.semanticweb.org/flightsatisfactionsurvey#hasAircraft> <http://www.semanticweb.org/flightsatisfactionsurvey#boeing747> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#qatarAirways> <http://www.w3.org/2000/01/rdf-schema#comment> "Airline instance" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#qatarAirways> <http://www.w3.org/2000/01/rdf-schema#label> "qatar Airways" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#qatarAirways> <http://www.w3.org/2000/01/rdf-schema#sameAs> "http://dbpedia.org/resource/qatarAirways" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#robert
+<http://www.semanticweb.org/flightsatisfactionsurvey#robert> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#robert> <http://www.semanticweb.org/flightsatisfactionsurvey#belongs> <http://www.semanticweb.org/flightsatisfactionsurvey#france> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#robert> <http://www.semanticweb.org/flightsatisfactionsurvey#chooseSeat> <http://www.semanticweb.org/flightsatisfactionsurvey#economyClass> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#robert> <http://www.semanticweb.org/flightsatisfactionsurvey#hasPurpose> <http://www.semanticweb.org/flightsatisfactionsurvey#leisure> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#robert> <http://www.semanticweb.org/flightsatisfactionsurvey#takesFlights> <http://www.semanticweb.org/flightsatisfactionsurvey#flight2> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#robert> <http://www.w3.org/2000/01/rdf-schema#comment> "Passenger instance" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#robert> <http://www.w3.org/2000/01/rdf-schema#label> "robert" .
+# 
+# http://www.semanticweb.org/flightsatisfactionsurvey#ryanair
+<http://www.semanticweb.org/flightsatisfactionsurvey#ryanair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#ryanair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/flightsatisfactionsurvey#Airline> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#ryanair> <http://www.semanticweb.org/flightsatisfactionsurvey#does> <http://www.semanticweb.org/flightsatisfactionsurvey#flight2> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#ryanair> <http://www.semanticweb.org/flightsatisfactionsurvey#hasAircraft> <http://www.semanticweb.org/flightsatisfactionsurvey#airbus340> .
+<http://www.semanticweb.org/flightsatisfactionsurvey#ryanair> <http://www.w3.org/2000/01/rdf-schema#comment> "Airline instance" .
+<http://www.semanticweb.org/flightsatisfactionsurvey#ryanair> <http://www.w3.org/2000/01/rdf-schema#label> "ryanair" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasOverallRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the passenger overall rating of the flight, from 1 to 10." .
+<http://www.semanticweb.org/flightsatisfactionsurvey#hasOverallRating> <http://www.w3.org/2000/01/rdf-schema#label> "has Overall Rating" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid19 <http://www.w3.org/2002/07/owl#members> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/flightsatisfactionsurvey#SeatComfort> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/flightsatisfactionsurvey#Punctuality> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/flightsatisfactionsurvey#Published> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/flightsatisfactionsurvey#OverallRating> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/flightsatisfactionsurvey#InflightEntertainment> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/flightsatisfactionsurvey#Food> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/flightsatisfactionsurvey#BoardingProcess> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

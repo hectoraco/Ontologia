@@ -1,0 +1,1320 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.semanticweb.org/flightsatisfactionsurvey" ],
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "labels" : {
+      "undefined" : "Flight Satisfaction Survey Ontology"
+    },
+    "comments" : {
+      "undefined" : "Ontology about the passengers flight satisfaction."
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#PassengerRating",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PassengerRating",
+      "undefined" : "Passenger Rating"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#excellent",
+      "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+      "comment" : {
+        "undefined" : "Passenger rating instance"
+      },
+      "labels" : {
+        "IRI-based" : "excellent",
+        "undefined" : "excellent"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#bad",
+      "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+      "comment" : {
+        "undefined" : "Passenger rating instance"
+      },
+      "labels" : {
+        "IRI-based" : "bad",
+        "undefined" : "bad"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#normal",
+      "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+      "comment" : {
+        "undefined" : "Passenger rating instance"
+      },
+      "labels" : {
+        "IRI-based" : "normal",
+        "undefined" : "normal"
+      }
+    } ],
+    "subClasses" : [ "4", "5", "6", "7", "8", "9", "10", "11" ],
+    "comment" : {
+      "undefined" : "Represents the main valuable aspects of every flight"
+    },
+    "id" : "3"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#VeryPoor",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VeryPoor",
+      "undefined" : "Very Poor"
+    },
+    "comment" : {
+      "undefined" : "Indicates a general very poor perception of the flight."
+    },
+    "id" : "18",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#BoardingProcess",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BoardingProcess",
+      "undefined" : "Boarding Process"
+    },
+    "comment" : {
+      "undefined" : "Indicates the rating for the boarding process."
+    },
+    "id" : "4",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#Food",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Food",
+      "undefined" : "Food"
+    },
+    "comment" : {
+      "undefined" : "Indicates the rating for the inflight food and drinks"
+    },
+    "id" : "5",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#Destination",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Destination",
+      "undefined" : "Destination"
+    },
+    "comment" : {
+      "undefined" : "Indicates the destination of the flight."
+    },
+    "id" : "21",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "22",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#Passenger",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Passenger",
+      "undefined" : "Passenger Information"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#christopher",
+      "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "http://dbpedia.org/resource/christopher",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "Passenger instance"
+      },
+      "labels" : {
+        "IRI-based" : "christopher",
+        "undefined" : "christopher"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#laura",
+      "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+      "comment" : {
+        "undefined" : "Passenger instance"
+      },
+      "labels" : {
+        "IRI-based" : "laura",
+        "undefined" : "laura"
+      }
+    } ],
+    "subClasses" : [ "23", "24", "25" ],
+    "comment" : {
+      "undefined" : "Represents the main information about every passenger."
+    },
+    "id" : "15"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "26",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#CabinStaff",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CabinStaff",
+      "undefined" : "Cabin Staff"
+    },
+    "comment" : {
+      "undefined" : "Indicates the rating for the cabin staff."
+    },
+    "id" : "7",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#Country",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Country",
+      "undefined" : "Country"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#france",
+      "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+      "comment" : {
+        "undefined" : "Country instance"
+      },
+      "labels" : {
+        "IRI-based" : "france",
+        "undefined" : "france"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#germany",
+      "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+      "comment" : {
+        "undefined" : "Country instance"
+      },
+      "labels" : {
+        "IRI-based" : "germany",
+        "undefined" : "germany"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Indicates the country of every passenger"
+    },
+    "id" : "24",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#Perception",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Perception",
+      "undefined" : "Passenger Perception"
+    },
+    "subClasses" : [ "45", "46", "18", "47", "48" ],
+    "comment" : {
+      "undefined" : "Represents the passengers general perception about every flight."
+    },
+    "id" : "19"
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#Airline",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Airline",
+      "undefined" : "Airline"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#ryanair",
+      "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+      "comment" : {
+        "undefined" : "Airline instance"
+      },
+      "labels" : {
+        "IRI-based" : "ryanair",
+        "undefined" : "ryanair"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#qatarAirways",
+      "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "http://dbpedia.org/resource/qatarAirways",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "Airline instance"
+      },
+      "labels" : {
+        "IRI-based" : "qatarAirways",
+        "undefined" : "qatar Airways"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Represents the diferent airline companies."
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#InflightEntertainment",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InflightEntertainment",
+      "undefined" : "Inflight Entertainment"
+    },
+    "comment" : {
+      "undefined" : "Indicates the rating for the inflight entertainment."
+    },
+    "id" : "8",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#Poor",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Poor",
+      "undefined" : "Poor"
+    },
+    "comment" : {
+      "undefined" : "Indicates a general  poor perception of the flight."
+    },
+    "id" : "46",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#Flight",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Flight",
+      "undefined" : "Flight Information"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#flight2",
+      "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+      "comment" : {
+        "undefined" : "Flight instance"
+      },
+      "labels" : {
+        "IRI-based" : "flight2",
+        "undefined" : "flight2"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#flight1",
+      "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "http://dbpedia.org/resource/flight1",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "Flight instance"
+      },
+      "labels" : {
+        "IRI-based" : "flight1",
+        "undefined" : "flight1"
+      }
+    } ],
+    "subClasses" : [ "62", "21", "63", "14" ],
+    "comment" : {
+      "undefined" : "Represents the main information about every passenger."
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#SeatType",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SeatType",
+      "undefined" : "Seat Type"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#firstClass",
+      "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+      "comment" : {
+        "undefined" : "Seat type instance"
+      },
+      "labels" : {
+        "IRI-based" : "firstClass",
+        "undefined" : "first Class"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#economyClass",
+      "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+      "comment" : {
+        "undefined" : "Seat type instance"
+      },
+      "labels" : {
+        "IRI-based" : "economyClass",
+        "undefined" : "economy Class"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#businessClass",
+      "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+      "comment" : {
+        "undefined" : "Seat type instance"
+      },
+      "labels" : {
+        "IRI-based" : "businessClass",
+        "undefined" : "business Class"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Indicates the type of the seat choosen by every passenger"
+    },
+    "id" : "23",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#SeatComfort",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SeatComfort",
+      "undefined" : "Seat Comfort"
+    },
+    "comment" : {
+      "undefined" : "Indicates the rating of the seat comfort."
+    },
+    "id" : "6",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "65",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#Date",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Date",
+      "undefined" : "Flight Date"
+    },
+    "comment" : {
+      "undefined" : "Indicates the flight date."
+    },
+    "id" : "62",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#Average",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Average",
+      "undefined" : "Average"
+    },
+    "comment" : {
+      "undefined" : "Indicates a general average perception of the flight."
+    },
+    "id" : "47",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#Punctuality",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Punctuality",
+      "undefined" : "Punctuality"
+    },
+    "comment" : {
+      "undefined" : "Indicates the rating related with the punctuality of every flight."
+    },
+    "id" : "10",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#OverallRating",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OverallRating",
+      "undefined" : "Overall Rating"
+    },
+    "comment" : {
+      "undefined" : "Indicates the overall rating for every flight."
+    },
+    "id" : "11",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#Good",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Good",
+      "undefined" : "Good"
+    },
+    "comment" : {
+      "undefined" : "Indicates a general good perception of the flight."
+    },
+    "id" : "45",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#Origin",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Origin",
+      "undefined" : "Origin"
+    },
+    "comment" : {
+      "undefined" : "Indicates the origin of the flight."
+    },
+    "id" : "63",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#Published",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Published",
+      "undefined" : "Date Published"
+    },
+    "comment" : {
+      "undefined" : "Indicates the published date of the survey."
+    },
+    "id" : "9",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#VeryGood",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VeryGood",
+      "undefined" : "Very Good"
+    },
+    "comment" : {
+      "undefined" : "Indicates a general very good perception of the flight."
+    },
+    "id" : "48",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#TripPurpose",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TripPurpose",
+      "undefined" : "Trip Purpose"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#business",
+      "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+      "comment" : {
+        "undefined" : "Trip purpose instance"
+      },
+      "labels" : {
+        "IRI-based" : "business",
+        "undefined" : "business"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#leisure",
+      "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+      "comment" : {
+        "undefined" : "Trip purpose instance"
+      },
+      "labels" : {
+        "IRI-based" : "leisure",
+        "undefined" : "leisure"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#other",
+      "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+      "comment" : {
+        "undefined" : "Trip purpose instance"
+      },
+      "labels" : {
+        "IRI-based" : "other",
+        "undefined" : "other"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Indicates the purpose of every passenger trip"
+    },
+    "id" : "25",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#Aircraft",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Aircraft",
+      "undefined" : "Aircraft"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#boeing747",
+      "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+      "comment" : {
+        "undefined" : "aircraft model"
+      },
+      "labels" : {
+        "IRI-based" : "boeing747",
+        "undefined" : "boeing747"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#airbus340",
+      "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+      "comment" : {
+        "undefined" : "aircraft model"
+      },
+      "labels" : {
+        "IRI-based" : "airbus340",
+        "undefined" : "airbus340"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Represents the diferent aircraft brands and models."
+    },
+    "id" : "14",
+    "superClasses" : [ "2" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "31",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "32",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "33",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "34",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "38",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "39",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "40",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "41",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "42",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "43",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "44",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "49",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "50",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "54",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "55",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "56",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "57",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "58",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "60",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "61",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "64",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "73",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#does",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "does",
+      "undefined" : "does"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Represents the flight asociated to the airline"
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#transports",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "transports",
+      "undefined" : "transports"
+    },
+    "domain" : "14",
+    "comment" : {
+      "undefined" : "Represents that every aircraft transports passengers"
+    },
+    "attributes" : [ "object" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#hasStaffRating",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "hasStaffRating",
+      "undefined" : "has Staff Rating"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Indicates the rating about the cabin staff in every flight, from 1 to 10."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#hasPassengerRating",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasPassengerRating",
+      "undefined" : "has Passenger Rating"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Represents the rating of every flight"
+    },
+    "attributes" : [ "object" ],
+    "id" : "20"
+  }, {
+    "range" : "6",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "30"
+  }, {
+    "range" : "10",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#hasBoardingRating",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "hasBoardingRating",
+      "undefined" : "has Boarding Rating"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Indicates the rating about the boarding process in every flight, from 1 to 10."
+    },
+    "attributes" : [ "someValues", "datatype" ],
+    "id" : "32"
+  }, {
+    "range" : "6",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#hasCode",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "hasCode",
+      "undefined" : "has Code"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Indicates the name or code of every flight"
+    },
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#belongs",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "belongs",
+      "undefined" : "belongs"
+    },
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "Indicates the country of every passenger"
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#takesFlights",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "takesFlights",
+      "undefined" : "takes Flight"
+    },
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "Represents that every passenger takes a flight number"
+    },
+    "attributes" : [ "object" ],
+    "id" : "36"
+  }, {
+    "range" : "10",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "37"
+  }, {
+    "range" : "9",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "38"
+  }, {
+    "range" : "6",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "39"
+  }, {
+    "range" : "9",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "40"
+  }, {
+    "range" : "11",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "41"
+  }, {
+    "range" : "6",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "42"
+  }, {
+    "range" : "10",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "43"
+  }, {
+    "range" : "9",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "44"
+  }, {
+    "range" : "6",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "49"
+  }, {
+    "range" : "10",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "50"
+  }, {
+    "range" : "2",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#hasAircraft",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hasAircraft",
+      "undefined" : "has Aircraft"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Represents wich aircraft model operates every flight"
+    },
+    "attributes" : [ "object" ],
+    "id" : "52"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "53"
+  }, {
+    "range" : "8",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "54"
+  }, {
+    "range" : "11",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "55"
+  }, {
+    "range" : "9",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "56"
+  }, {
+    "range" : "10",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#hasBoardingRating",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "hasBoardingRating",
+      "undefined" : "has Boarding Rating"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Indicates the rating about the boarding process in every flight, from 1 to 10."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "58"
+  }, {
+    "range" : "6",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "59"
+  }, {
+    "range" : "8",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "60"
+  }, {
+    "range" : "11",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#hasBoardingRating",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "hasBoardingRating",
+      "undefined" : "has Boarding Rating"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Indicates the rating about the boarding process in every flight, from 1 to 10."
+    },
+    "attributes" : [ "someValues", "datatype" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#chooseSeat",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "chooseSeat",
+      "undefined" : "choose Seat"
+    },
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "Represents the seat class choosen by every passenger"
+    },
+    "attributes" : [ "object" ],
+    "id" : "66"
+  }, {
+    "range" : "2",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#hasPurpose",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "hasPurpose",
+      "undefined" : "has Purpose"
+    },
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "Represents the trip purpose of every passenger"
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "68"
+  }, {
+    "range" : "19",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "69"
+  }, {
+    "range" : "2",
+    "domain" : "63",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "70"
+  }, {
+    "range" : "2",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "71"
+  }, {
+    "range" : "19",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#hasOverallRating",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasOverallRating",
+      "undefined" : "has Overall Rating"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Represents the passenger overall rating of the flight, from 1 to 10."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "73"
+  }, {
+    "range" : "19",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "74"
+  }, {
+    "range" : "19",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#hasPerception",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "hasPerception",
+      "undefined" : "has Perception"
+    },
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "Represents the passenger main perception about the flight"
+    },
+    "attributes" : [ "object" ],
+    "id" : "76"
+  }, {
+    "range" : "19",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "77"
+  }, {
+    "range" : "15",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "78"
+  }, {
+    "range" : "15",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://www.semanticweb.org/flightsatisfactionsurvey#hasDate",
+    "baseIri" : "http://www.semanticweb.org/flightsatisfactionsurvey",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "hasDate",
+      "undefined" : "has Date"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "Indicates the date when the rating has been published"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "80"
+  }, {
+    "range" : "15",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "81"
+  }, {
+    "range" : "3",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "82"
+  }, {
+    "range" : "3",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "83"
+  }, {
+    "range" : "3",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "84"
+  }, {
+    "range" : "3",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "85"
+  }, {
+    "range" : "3",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "86"
+  }, {
+    "range" : "3",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "87"
+  }, {
+    "range" : "3",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "88"
+  }, {
+    "range" : "3",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "89"
+  } ]
+}
